@@ -1,0 +1,113 @@
+body {
+    background-color: #9999ff;
+    color: white;
+    font-family: Poppins, sans-serif;
+    margin: 0;
+}
+
+h1 {
+}
+
+p {
+
+}
+
+h1, p {
+
+}
+
+form {
+    background-color: rgba(27, 27, 50, 0.8);
+    border: none;
+    padding: 2.5rem;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+label {
+    display: block;
+    font-size: 1.125rem;
+}
+
+label>input[type="checkbox"] {
+    margin: 0.5rem auto 0.5rem auto;
+}
+
+label>input[type="radio"] {
+    margin: 0.5rem auto 0.5rem auto;
+}
+
+input, select, option, textarea {
+    font-size: 1rem;
+}
+
+#header {
+    text-align: center;
+    margin: 2rem auto 2rem auto;
+}
+
+#title {
+    font-family: sans-serif;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+#description {
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+#name-label, #email-label, #number-label {
+    margin: 0.5rem auto 0.5rem auto;
+}
+
+#name, #email, #number {
+    height: 2.375rem;
+    width: 100%;
+    margin: 0.5rem auto 0.5rem auto;
+}
+
+#dropdown-label, #dropdown-feature-label {
+    margin: 0.5rem auto 0.5rem auto;
+}
+
+#dropdown, #dropdown-feature {
+    height: 2.375rem;
+    width: 100%;
+    margin: 0.5rem auto 0.5rem auto;
+}
+
+#comments-or-suggestions-label {
+    margin: 0.5rem auto 0.5rem auto;
+}
+
+#comments-or-suggestions {
+    min-height: 120px;
+    width: 100%;
+    margin: 0.5rem auto 0.5rem auto;
+}
+#submit {
+    width: 100%;
+    background-color: #37af65;
+    color: white;
+    border: none;
+    height: 45px;
+    font-size: 1rem;
+}
+
+.container {
+    max-width: 720px;
+    margin: 2em auto 0 auto;
+}
+
+.question {
+    font-size: 1.125rem;
+    margin: 0.5rem auto 0.5rem auto;
+}
