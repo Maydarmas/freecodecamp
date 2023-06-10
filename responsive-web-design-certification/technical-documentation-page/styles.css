@@ -33,9 +33,18 @@ article {
 }
 
 code {
-    padding: 1rem;
+    display: block;
+    padding: 1.5rem;
     margin: 1rem;
     text-align: left;
+    white-space: pre-line;
+    /* position: relative; */
+    /* word-break: normal;
+    word-wrap: normal; */
+    line-height: 2;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+
 }
 
 #navbar {
@@ -73,4 +82,22 @@ code {
 section li {
     margin-bottom: 1rem;
     margin-left: 1rem;
+}
+
+@media only screen and (max-width: 815px) {
+    #navbar {
+        width: 100%;
+        max-height: 275px;
+        position: static;
+    }
+
+    #navbar ul {
+        height: 207px;
+        overflow-y: scroll;
+        border: 1px solid;
+    }
+
+    #main-doc {
+        margin: 0;
+    }
 }

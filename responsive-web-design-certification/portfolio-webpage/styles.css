@@ -1,0 +1,255 @@
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.4;
+    color: var(--main-white);
+}
+
+/* NAV SECTION */
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: var(--main-red);
+}
+
+#nav-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    margin-right: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--main-white);
+    font-size: 2.4rem;
+    padding: 2rem;
+}
+
+/* WELCOME SECTION */
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(
+        62deg,
+        #3a3d40,
+        #181719
+    );
+}
+
+#welcome-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 6rem;
+}
+
+#welcome-subtitle {
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 200;
+    color: var(--main-red);
+}
+
+/* PROJECTS SECTION */
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10rem 2rem;
+    background-color: var(--main-blue);
+}
+
+#projects-title {
+    margin: 0 auto 6rem auto;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 4.2rem;
+    border-bottom: 2px solid var(--main-white);
+    border-radius: 2px;
+}
+
+#projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin-bottom: 6rem;
+}
+
+.project-tile {
+    text-decoration: none;
+}
+
+.project-tile:hover .code {
+    color: #ff7f50;
+}
+
+.project-image {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.project-title {
+    width: 100%;
+    height: 20%;
+    padding: 2rem 0.5rem;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--main-white);
+    background-color: var(--main-gray);
+}
+
+.code {
+    color: var(--main-gray);
+    transition: color 0.3s ease-out;
+}
+
+
+#projects-show-all {
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--main-white);
+    background-color: var(--main-gray);
+    border-radius: 2px;
+    transition: background-color 0.3s ease-out;
+}
+
+#projects-show-all:hover {
+    background-color: var(--main-red);
+}
+
+#projects-show-all i {
+    margin-left: 10px;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+}
+
+#projects-show-all:hover i {
+    transform: translateX(2px);
+}
+
+/* CONTACT SECTION */
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    background-color: var(--main-gray);
+}
+
+#contact-header {
+    text-align: center;
+}
+
+#contact-title {
+    font-size: 6rem;
+    font-family: "Raleway", sans-serif;
+}
+
+#contact-subtitle {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+#contact-links {
+    width: 100%;
+    max-width: 980px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+}
+
+.contact-link {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2.4rem;
+    color: var(--main-white);
+    transform: translateY(0);
+    transition: transform 0.3s ease-out;
+}
+
+.contact-link:hover {
+    transform: translateY(8px);
+}
+
+.contact-icon {
+    margin-right: 5px;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--main-gray);
+    border-top: 5px solid var(--main-red);
+}
+
+.footer-text {
+    margin: 2rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: var(--main-white);
+}
+
+#footer-link {
+    color: var(--main-white);
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 500px) {
+    #navbar {
+        justify-content: center;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
